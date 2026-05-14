@@ -3,24 +3,22 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SchoolApp.MainPage"
              Title="Home">
-
     <VerticalStackLayout Padding="20" Spacing="15" VerticalOptions="Center">
         <Label Text="School App"
                FontSize="32"
                HorizontalOptions="Center" />
-
         <Label Text="Powered by .NET 10 MAUI"
                FontSize="16"
                HorizontalOptions="Center" />
-
         <Label x:Name="StatusLabel"
                Text="Tap the button to confirm everything works."
                FontSize="14"
                HorizontalOptions="Center" />
-
         <Button Text="Check"
                 Clicked="OnTapClicked"
                 HorizontalOptions="Center" />
+        <Button Text="Open students list"
+                Clicked="OnOpenStudentsClicked"
+                HorizontalOptions="Center" />
     </VerticalStackLayout>
-
 </ContentPage>
