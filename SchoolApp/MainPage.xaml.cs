@@ -9,10 +9,9 @@ public partial class MainPage : ContentPage
     {
         InitializeComponent();
 
-       
         BindingContext = new Person();
     }
-    
+
     private void OnTapClicked(object sender, EventArgs e)
     {
         _count++;
@@ -22,5 +21,14 @@ public partial class MainPage : ContentPage
     private async void OnOpenStudentsClicked(object sender, EventArgs e)
     {
         await Shell.Current.GoToAsync(nameof(StudentsPage));
+    }
+
+ 
+    private void OnShoutClicked(object sender, EventArgs e)
+    {
+        if (BindingContext is Person p)
+        {
+            p.Name = p.Name.ToUpper();
+        }
     }
 }

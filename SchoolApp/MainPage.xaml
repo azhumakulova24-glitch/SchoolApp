@@ -27,6 +27,10 @@
         <Entry Text="{Binding Name}" Placeholder="Edit your name" />
         <Label Text="{Binding Name}" FontSize="20" />
         <Label Text="{Binding City}" FontSize="16" TextColor="Gray" />
+
+        <Button Text="Shout the name"
+                Clicked="OnShoutClicked"
+                HorizontalOptions="Center" />
         <Button Text="Open students list"
                 Clicked="OnOpenStudentsClicked"
                 HorizontalOptions="Center" />
